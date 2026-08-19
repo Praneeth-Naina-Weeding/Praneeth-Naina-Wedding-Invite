@@ -415,6 +415,14 @@
         color: var(--cream-2);
         line-height: 1.9;
       }
+      .hero-parents .invite-label {
+        display: block;
+        font-size: clamp(0.75rem, 2.2vw, 0.95rem);
+        color: var(--gold);
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+      }
       .diya-row {
         display: flex;
         justify-content: center;
@@ -629,14 +637,14 @@
         grid-template-columns: 1fr;
         gap: clamp(16px, 4vw, 28px);
         margin-top: 10px;
-        max-width: 840px;
+        max-width: 920px;
         margin-left: auto;
         margin-right: auto;
       }
       @media (min-width: 640px) {
         .couple-cards {
           grid-template-columns: 1fr auto 1fr;
-          align-items: center;
+          align-items: stretch;
         }
       }
       .couple-card {
@@ -644,8 +652,13 @@
         color: var(--cream);
         border: 1px solid var(--gold);
         border-radius: 6px;
-        padding: clamp(18px, 4vw, 30px) clamp(16px, 4vw, 26px);
+        padding: clamp(18px, 4vw, 30px) clamp(26px, 5vw, 46px);
+        min-width: 360px;
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
       }
       .couple-card::before,
       .couple-card::after {
@@ -700,6 +713,9 @@
         font-size: 1.4rem;
         color: var(--gold-light);
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       /* ---------- SECTION: SRINIVASA KALYANAM (wine) ---------- */
@@ -1074,12 +1090,14 @@
             30 ఆగస్టు 2026, ఆదివారం</span
           >
           <span class="en"
-            >Sumuhurtam <br />
+            >Sumuhurtham <br />
             30 August 2026, Sunday</span
           >
         </div>
 
         <div class="hero-parents">
+          <span class="invite-label te">ఆహ్వానిస్తున్న వారు</span>
+          <span class="invite-label en">Invited by</span>
           <span class="te"
             >శ్రీ పెరుగు పురుషోత్తం రెడ్డి <br />
             &amp; శ్రీమతి పెరుగు వేణు కళావతి</span
@@ -1176,7 +1194,7 @@
       <div class="inner reveal">
         <div class="eyebrow">
           <span class="te">దీవెనలతో</span
-          ><span class="en">With Divine Blessings</span>
+          ><span class="en">With Divine Blessings of</span>
         </div>
         <p class="blessing-line">
           <span class="te"
@@ -1184,8 +1202,8 @@
             పెరుగు పుష్ప కళావతమ్మ గార్ల ఆశీస్సులతో</span
           >
           <span class="en"
-            >Lt. Smt &amp; Sri Perugu Pushpa Kalavathamma – Sita Rami
-            Reddy</span
+            >Lt. Smt &amp; Sri Perugu Pushpa Kalavathamma <br />
+            Sita Rami Reddy</span
           >
         </p>
         <p class="blessing-line">
@@ -1194,7 +1212,8 @@
             రామి రెడ్డి గార్ల ఆశీస్సులతో</span
           >
           <span class="en"
-            >Smt. Palle Padmavathamma – Lt. Sri Palle Tulasi Rami Reddy</span
+            >Smt. Palle Padmavathamma <br />
+            Lt. Sri Palle Tulasi Rami Reddy</span
           >
         </p>
         <p class="invite-line">
@@ -1220,7 +1239,7 @@
             >
             <span class="en"
               >28th August 2026 · Friday · 10:00 a.m.<br />Shilpa Township,
-              Dinna Devarpadu, Kurnool</span
+              Dinnedevarapadu, Kurnool</span
             >
           </div>
         </div>
@@ -1245,10 +1264,10 @@
             >Srirastu &nbsp;•&nbsp; Shubhamastu &nbsp;•&nbsp; Avighnamastu</span
           >
         </div>
-        <div class="eyebrow">
+        <!-- <div class="eyebrow">
           <span class="te">మా ఏకైక కుమారుడు</span
           ><span class="en">Our Only Son</span>
-        </div>
+        </div> -->
         <h2>
           <span class="te">వధూవరులు</span
           ><span class="en">The Wedding Couple</span>
@@ -1268,11 +1287,12 @@
             </div>
             <div class="parents">
               <span class="te"
-                >తల్లిదండ్రులు: శ్రీ పురుషోత్తం రెడ్డి &amp; శ్రీమతి వేణు
-                కళావతి</span
+                >తల్లిదండ్రులు: శ్రీ పురుషోత్తం రెడ్డి <br />
+                శ్రీమతి వేణు కళావతి</span
               >
               <span class="en"
-                >S/o Sri Purushotham Reddy &amp; Smt Venu Kalavathi</span
+                >S/o Sri Perugu Purushotham Reddy <br />
+                Smt Venu Kalavathi</span
               >
             </div>
           </div>
@@ -1288,12 +1308,12 @@
             <div class="qual">MD (Pediatrics)</div>
             <div class="parents">
               <span class="te"
-                >బళ్లారి వాస్తవ్యులు డా. ఎం. తిప్పా రెడ్డి &amp; డా. శ్రీమతి
-                తనూజ రెడ్డి గార్ల పెద్ద కుమార్తె</span
+                >బళ్లారి వాస్తవ్యులు శ్రీ డా. ఎం. తిప్పా రెడ్డి <br />
+                శ్రీమతి డా. తనూజ రెడ్డి గార్ల పెద్ద కుమార్తె</span
               >
               <span class="en"
-                >Elder daughter of Dr. M. Tippa Reddy &amp; Smt. Dr. Tanuja
-                Reddy, Bellary</span
+                >Elder daughter of Sri Dr. M. Tippa Reddy <br />
+                Smt. Dr. Tanuja Reddy, Bellary</span
               >
             </div>
           </div>
@@ -1310,8 +1330,10 @@
               అల్లం భవన్, అనంతపురం రోడ్, బళ్లారి</span
             >
             <span class="en"
-              >30th August 2026 · Sunday · 9:14–11:23 a.m. (Tula Lagnam)<br />Venue:
-              Allum Bhavan, Ananthapur Road, Bellary</span
+              >30th August 2026 <br />
+              Sunday · 9:14–11:23 a.m. (Tula Lagnam)<br />Venue: Allum Bhavan,
+              <br />
+              Ananthapur Road, Bellary</span
             >
           </div>
         </div>
@@ -1332,13 +1354,13 @@
           />
         </div>
 
-        <div class="eyebrow">
+        <!-- <div class="eyebrow">
           <span class="te">దివ్య దర్శనం</span
           ><span class="en">A Divine Union</span>
-        </div>
+        </div> -->
         <h2>
-          <span class="te">శ్రీనివాస కళ్యాణ మహోత్సవము</span
-          ><span class="en">Sri Srinivasa Kalyanam</span>
+          <span class="te">శ్రీ శ్రీనివాస కళ్యాణం & రిసెప్షన్</span
+          ><span class="en">Sri Srinivasa Kalyanam & Reception</span>
         </h2>
 
         <div class="dark-card reveal-scale">
@@ -1351,9 +1373,9 @@
               ఆంధ్రప్రదేశ్</span
             >
             <span class="en"
-              >31st August 2026 · Monday<br />Kalyanam: 7:00–10:00 a.m.
-              &nbsp;|&nbsp; Reception: 11:00 a.m. onwards &nbsp;|&nbsp; Lunch
-              follows<br />Raaga Mayuri Resort, Behind G. Pulla Reddy
+              >31st August 2026 · Monday<br />Kalyanam: 7:00–10:00 a.m. <br />
+              Reception: 11:00 a.m. onwards <br />
+              Lunch follows<br />Raaga Mayuri Resort, Behind G. Pulla Reddy
               Engineering College, Dinne Devarapadu, Kurnool, A.P.</span
             >
           </div>
