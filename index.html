@@ -583,7 +583,7 @@
 
       .section-figure {
         margin: 34px auto 0;
-        max-width: 520px;
+        max-width: 800px;
       }
       .section-figure img {
         margin: 0 auto;
@@ -643,7 +643,7 @@
       }
       @media (min-width: 640px) {
         .couple-cards {
-          grid-template-columns: 1fr auto 1fr;
+          grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
           align-items: stretch;
         }
       }
@@ -653,12 +653,12 @@
         border: 1px solid var(--gold);
         border-radius: 6px;
         padding: clamp(18px, 4vw, 30px) clamp(26px, 5vw, 46px);
-        min-width: 360px;
+        width: 100%;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100%;
+        box-sizing: border-box;
       }
       .couple-card::before,
       .couple-card::after {
@@ -689,21 +689,21 @@
       }
       .couple-card .cname {
         font-family: "Noto Serif Telugu", serif;
-        font-size: 1.3rem;
+        font-size: clamp(1rem, 2.6vw, 1.3rem);
         color: var(--gold-light);
         margin-bottom: 6px;
       }
       body[data-lang="en"] .couple-card .cname {
         font-family: "Cinzel", serif;
-        font-size: 1.1rem;
+        font-size: clamp(0.9rem, 2.2vw, 1.1rem);
       }
       .couple-card .qual {
-        font-size: clamp(0.85rem, 2.4vw, 1.1rem);
+        font-size: clamp(0.8rem, 2.1vw, 1.1rem);
         color: var(--cream-2);
         margin-bottom: 10px;
       }
       .couple-card .parents {
-        font-size: clamp(0.85rem, 2.4vw, 1.1rem);
+        font-size: clamp(0.8rem, 2.1vw, 1.1rem);
         color: var(--cream-2);
         line-height: 1.7;
       }
@@ -954,8 +954,8 @@
           <span>❋</span>
         </button>
         <div class="gate-hint">
-          <span class="te">తాకి తెరవండి — సంగీతంతో</span
-          ><span class="en">Tap to open — with music</span>
+          <span class="te">తాకి తెరవండి</span
+          ><span class="en">Tap to open</span>
         </div>
       </div>
     </div>
@@ -1193,8 +1193,8 @@
     <section id="pelli-koduku">
       <div class="inner reveal">
         <div class="eyebrow">
-          <span class="te">దీవెనలతో</span
-          ><span class="en">With Divine Blessings of</span>
+          <!-- <span class="te">దీవెనలతో</span> -->
+          <span class="en">With Divine Blessings of</span>
         </div>
         <p class="blessing-line">
           <span class="te"
@@ -1279,16 +1279,16 @@
               <span class="te">వరుడు</span><span class="en">The Groom</span>
             </div>
             <div class="cname">
-              <span class="te">చి. డా. సాయి ప్రణీత్ రెడ్డి</span
-              ><span class="en">Chi. Dr. Sai Praneeth Reddy</span>
+              <span class="te">డా. సాయి ప్రణీత్ రెడ్డి</span
+              ><span class="en">Dr. Sai Praneeth Reddy</span>
             </div>
             <div class="qual">
               MS, MRCS (Eng), MCh (Renal Transplant Surgery)
             </div>
             <div class="parents">
               <span class="te"
-                >తల్లిదండ్రులు: శ్రీ పురుషోత్తం రెడ్డి <br />
-                శ్రీమతి వేణు కళావతి</span
+                >శ్రీ పెరుగు పురుషోత్తం రెడ్డి <br />
+                శ్రీమతి వేణు కళావతి గార్ల ఏకైక కుమారుడు</span
               >
               <span class="en"
                 >S/o Sri Perugu Purushotham Reddy <br />
@@ -1302,8 +1302,8 @@
               <span class="te">వధువు</span><span class="en">The Bride</span>
             </div>
             <div class="cname">
-              <span class="te">చి.ల.సౌ. డా. నైనా రెడ్డి</span
-              ><span class="en">Chi.La.Sow. Dr. Naina Reddy</span>
+              <span class="te">డా. నైనా రెడ్డి</span
+              ><span class="en">Dr. Naina Reddy</span>
             </div>
             <div class="qual">MD (Pediatrics)</div>
             <div class="parents">
@@ -1397,6 +1397,22 @@
           <span class="te">ఆహ్వానం</span
           ><span class="en">With Warm Regards</span>
         </div>
+        <div class="mt" style="margin-top: 36px">
+          <h3>
+            <span class="te">శుభాభినందనలతో</span
+            ><span class="en">Best Wishes From</span>
+          </h3>
+          <p>
+            <span class="te"
+              >ఎన్. కృష్ణ వేణి – బాల వెంకట రెడ్డి<br />ఎన్. అనితమ్మ – జస్టిస్
+              హరినాథ్ నూనేపల్లి</span
+            >
+            <span class="en"
+              >N. Krishna Veni &amp; N. Bala Venkata Reddy<br />N. Anithamma
+              &amp; Justice Harinath Nunepally</span
+            >
+          </p>
+        </div>
         <h2>
           <span class="te">ఆహ్వానించిన వారు</span
           ><span class="en">Invited By</span>
@@ -1421,7 +1437,7 @@
           >
         </p>
 
-        <div class="kids-line">
+        <div class="kids-line te">
           లావణ్య · గేహా · లాహిత్య · గాయత్రి · గీతిక · చరణ్ · జైదీప్ · నవదీప్ ·
           లక్షిత్
         </div>
@@ -1431,23 +1447,6 @@
         >
           Lavanya · Geha · Lahithya · Gayathri · Geethika · Charan · Jaideep ·
           Navadeep · Lakshith
-        </div>
-
-        <div class="mt" style="margin-top: 36px">
-          <h3>
-            <span class="te">శుభాభినందనలతో</span
-            ><span class="en">Best Wishes From</span>
-          </h3>
-          <p>
-            <span class="te"
-              >ఎన్. కృష్ణ వేణి – బాల వెంకట రెడ్డి<br />ఎన్. అనితమ్మ – జస్టిస్
-              హరినాథ్ నూనేపల్లి</span
-            >
-            <span class="en"
-              >N. Krishna Veni &amp; N. Bala Venkata Reddy<br />N. Anithamma
-              &amp; Justice Harinath Nunepally</span
-            >
-          </p>
         </div>
       </div>
     </section>
